@@ -41,10 +41,8 @@ class MusicLibraryController
     end
 
    def list_artists
-     binding.pry
       artists = Artist.all.sort_by.each{ |artist| artist.name}
       artists.each.with_index(1){ |artist, index| puts "#{index}. #{artist.name}"}
-
    end
 
    def list_genres
