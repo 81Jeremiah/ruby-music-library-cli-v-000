@@ -27,7 +27,6 @@ class Genre
   def self.create(name)
     genre = self.new(name)
     self.all << genre
-    @@all << genre
     genre
   end
 
